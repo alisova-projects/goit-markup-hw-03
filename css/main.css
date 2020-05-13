@@ -1,0 +1,112 @@
+/* Hero */
+.hero {
+  background-color: var(--tertiary-bg-color);
+}
+.hero-title {
+  color: var(--title-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Button */
+.hero-button {
+  color: var(--tertiary-text-color);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--primary-text-color);
+}
+
+/* Our advantages */
+.title-hiden {
+  display: none;
+}
+
+.advant-list .title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.advant-list p {
+  color: var(--secondary-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Our occupation */
+.occupation-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.section-occupation .title {
+  color: var(--tertiary-text-color);
+  background-color: rgba(47, 48, 58, 0.8); /* временно */
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Our team */
+.section-team {
+  background-color: var(--secondary-bg-color);
+}
+.team-title {
+  color: var(--primary-text-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-text {
+  color: var(--secondary-text-color);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.socials-team .link {
+  color: #afb1b8; /* временно */
+}
+.socials-team .link:hover,
+.socials-team .link:focus {
+  color: var(--accent-color);
+}
+
+/* Our customers */
+.customers-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.customers-logo .link {
+  color: #afb1b8; /* временно */
+}
+.customers-logo .link:hover,
+.customers-logo .link:focus {
+  color: var(--accent-color);
+}
