@@ -1,13 +1,27 @@
 /* Hero */
 .hero {
-  background-color: var(--tertiary-bg-color); /* временно */
-  /* width: 1600px; */
-  text-align: center;
-  /* margin: 0 auto; */
+  display: block;
+
+  margin: 0 auto;
+  background-image: url('../images/hero.jpg'), url('../images/hero_overlay.jpg');
+  background-repeat: repeat-x no-repeat;
+  background-position: center;
+  background-size: 1600px 600px;
+  background-size: cover;
 }
+.hero-content {
+  display: block;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  width: 646px;
+}
+
 .hero-title {
+  display: block;
   margin-top: 0;
-  margin-bottom: 46px;
+  margin-bottom: 37px;
 
   color: var(--title-text-color);
 
@@ -27,7 +41,6 @@
 
   display: inline-block;
 
-  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -52,10 +65,7 @@
 .section-advant > .container {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.title-hiden {
-  display: none;
+  border-bottom: 1px solid #ececec;
 }
 
 .advant.list .item {
@@ -75,8 +85,8 @@
   display: flex;
 }
 
-.advant .item + .item {
-  margin-left: 30px;
+.advant .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advant img {
@@ -84,6 +94,7 @@
 }
 
 .advant p {
+  display: block;
   color: var(--secondary-text-color);
 
   font-size: 14px;
@@ -91,12 +102,9 @@
 }
 
 /* Our occupation */
-.section-occupation {
-  outline: 2px solid tomato;
-}
 
 .section-occupation > .container {
-  padding-top: 0;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -114,17 +122,21 @@
 }
 
 .occupation.list .item {
-  border-radius: 4px;
   width: calc((100% - 60px) / 3);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-.occupation .item + .item {
-  margin-left: 30px;
+.occupation .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .section-occupation .title {
+  padding-top: 27px;
+  padding-bottom: 27px;
+
   color: var(--tertiary-text-color);
-  /* background-color: rgba(47, 48, 58, 0.8); временно */
+  background-color: rgba(47, 48, 58, 0.8); /*временно*/
 
   font-weight: bold;
   font-size: 14px;
@@ -138,8 +150,8 @@
 .section-team {
   background-color: var(--secondary-bg-color);
   text-align: center;
-
-  outline: 2px solid tomato;
+  /* 
+  outline: 2px solid tomato; */
 }
 
 .section-team > .container {
@@ -160,27 +172,33 @@
   display: flex;
 }
 
-.team.list .item {
+.team.list > .item {
   width: calc((100% - 90px) / 4);
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  overflow: hidden;
 
   border-radius: 4px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-.team.list .item + .item {
-  margin-left: 30px;
+.card-content {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  background-color: var(--header-bg-color);
+
+  padding-top: 30px;
+  padding-bottom: 36px;
+}
+
+.team.list > .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .name {
-  margin-top: 30px;
   margin-bottom: 10px;
-}
-
-.socials-item {
-  margin: 0;
-  /* display: block; */
-  justify-content: space-evenly;
 }
 
 .team-text {
@@ -195,6 +213,7 @@
 }
 .socials-team .link {
   color: #afb1b8; /* временно */
+  display: block;
 }
 .socials-team .link:hover,
 .socials-team .link:focus {
@@ -203,12 +222,13 @@
 
 .socials-team {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 43px;
+  padding-left: 43px;
 }
 
 /* Our customers */
-.section-customers {
-  outline: 2px solid tomato;
-}
 
 .section-customers.container {
   padding-top: 94px;
@@ -225,21 +245,31 @@
 }
 .customers-logo.list {
   display: flex;
-  justify-content: center;
 }
 
-.customers-logo.list .item {
+.customers-logo.list > .item {
   width: calc((100% - 150px) / 6);
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
-.customers-logo .item + .item {
-  margin-left: 30px;
+.customers-logo.list > .item:hover,
+.customers-logo.list > .item:focus {
+  border-color: var(--accent-color);
+}
+
+.customers-logo .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .customers-logo .link {
   color: #afb1b8; /* временно */
-  display: flex;
-  justify-content: center;
 }
 .customers-logo .link:hover,
 .customers-logo .link:focus {

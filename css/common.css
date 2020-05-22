@@ -7,8 +7,7 @@
   --secondary-text-color: #757575;
   --tertiary-text-color: #ffffff;
 
-  --header-bg-color: #ffffff;
-  --primary-bg-color: #e5e5e5;
+  --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --tertiary-bg-color: #2f303a;
 }
@@ -49,15 +48,30 @@ p {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: block;
 }
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Header */
 .page-header {
-  background-color: var(--header-bg-color);
+  background-color: var(--primary-bg-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
@@ -69,12 +83,12 @@ img {
 
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
 .logo {
-  display: inline-block;
+  display: block;
 
   color: var(--primary-text-color);
 
@@ -82,8 +96,9 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  /* line-height: 1.19; */
+  line-height: 1.19;
 }
+
 .logo .logo-web {
   color: var(--logo-color);
 }
@@ -113,11 +128,14 @@ img {
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-.header-site-nav .link,
-.header-contacts .link {
+.header-site-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.header-contacts .link {
+  display: block;
 }
 
 .header-site-nav .link:hover,
@@ -129,7 +147,7 @@ img {
 }
 
 /* Fast contacts */
-.header-contacts {
+.header-contacts.list {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -140,12 +158,12 @@ img {
   letter-spacing: 0.02em;
 }
 
-.header-contacts .link {
+.header-contacts.list .link {
   color: var(--secondary-text-color);
 }
 
-.header-contacts .item + .item {
-  margin-left: 30px;
+.header-contacts.list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .header-contacts .link:hover,
@@ -154,15 +172,17 @@ img {
 }
 
 /* Footer */
-.footer {
+.page-footer {
   color: var(--tertiary-text-color);
-  background-color: var(--tertiary-bg-color); /* временно */
+  background-color: var(--tertiary-bg-color);
 }
 
-.footer .container {
+.page-footer .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
+  padding-top: 48px;
+  justify-content: space-between;
 }
 
 .call-to-action-socials .socials {
@@ -171,27 +191,28 @@ img {
 
 .call-to-action-apeal {
   display: flex;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .address-container {
-  padding-top: 48px;
-  padding-bottom: 46px;
-  margin-right: 179px;
+  padding-bottom: 28px;
+  /* margin-right: 69px; */
 }
-.footer > .logo {
-  font-weight: bold;
+.page-footer > .logo {
   font-size: 22px;
   line-height: 1.18;
 }
-.footer .logo.link {
+.page-footer .logo.link {
   margin-bottom: 10px;
 }
-.logo-studio {
+.logo.inverse {
   color: var(--tertiary-text-color);
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
+
   color: var(--tertiary-text-color);
 
   font-size: 14px;
@@ -199,11 +220,17 @@ img {
 
   font-style: normal;
 }
-.footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
+
+.address p {
+  margin-bottom: 10px;
 }
 
-.call-to-action-socials {
+.address a:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .call-to-action {
@@ -212,12 +239,12 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
 
-  display: inline-block;
+  display: block;
   margin-bottom: 21px;
 }
 
-.socials.list .item + .item {
-  margin-left: 10px;
+.socials.list .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .socials .link {
@@ -227,12 +254,15 @@ img {
 .socials .link:focus {
   color: var(--accent-color);
 }
-.copy {
-  margin: 20px auto;
+.page-footer .copy {
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 
+  text-align: center;
   font-size: 12px;
   line-height: 2;
-  text-align: center;
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -243,7 +273,6 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
