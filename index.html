@@ -20,41 +20,34 @@
     <!-- Белый фон -->
     <!--Шапка сайта-->
     <header class="page-header">
-      <div class="container main-nav">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo link"
-            ><span lang="en" class="logo-web">Web</span
-            ><span lang="en"> Studio</span></a
-          >
-
-          <ul class="header-site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link current">Студия</a>
+      <div class="container page-header__container">
+        <nav class="page-header__nav">
+          <a href="./index.html" class="logo link"><span lang="en">Web<span lang="en"  class="page-logo"> Studio</span></a>
+    
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="link site-nav__link site-nav__link--current">Студия</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="link site-nav__link">Портфолио</a>
             </li>
-            <li class="item">
-              <a href="./contacts.html" class="link">Контакты</a>
+            <li class="site-nav__item">
+              <a href="./contacts.html" class="link site-nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="item">
-            <a
-              href="mailto:info@devstudio.com"
-              aria-label="Электронная почта"
-              class="link"
-            >
+        <ul class="list contact-info__list">
+          <li class="contact-info__item">
+            <a href="mailto:info@devstudio.com" aria-label="Электронная почта" class="link page-header__contacts">
+              <span class="site-nav__icon">Иконка</span>
               <!-- <img src="./images/envelope(hover).svg" alt="Электронная почта" /> -->
-              info@devstudio.com</a
-            >
+               info@devstudio.com</a>
           </li>
           <li class="item">
-            <a href="tel:+380961111111" aria-label="Телефон" class="link">
+            <a href="tel:+380961111111" aria-label="Телефон" class="link page-header__contacts">
+              <span class="site-nav__icon">Иконка</span>
               <!-- <img src="./images/smartphone.svg" alt="Телефон" /> -->
-              +38 096 111 11 11</a
-            >
+               +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -63,48 +56,48 @@
     <main class="page-content">
       <!--Герой-->
       <section class="hero">
-        <div class="hero-content container">
-          <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-          <a href="#" class="hero-button">Заказать услугу</a>
+        <div class="hero__container container">
+          <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
+          <a href="#" class="hero__button">Заказать услугу</a>
         </div>
-        <img src="./images/hero.jpg" alt="Герой" />
+        <img src="./images/hero.jpg" alt="Герой" class="hero__img" />
       </section>
 
       <!-- Светло-серый фон -->
 
-      <!--Наши преимущества-->
-      <section class="section-advant">
-        <div class="container">
+      <!--Наши преимущества (features)-->
+      <section>
+        <div class="container features__container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="advant list">
-            <li class="item">
-              <img src="./images/antenna_1.svg" alt="Антенна" />
-              <h3 class="title">Внимание к деталям</h3>
-              <p>
+          <ul class="features__list list">
+            <li class="features__item item">
+              <img src="./images/antenna_1.svg" alt="Антенна" class="features__icon" />
+              <h3 class="features__title">Внимание к деталям</h3>
+              <p class="features__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item">
-              <img src="./images/clock_1.svg" alt="Часы" />
-              <h3 class="title">Пунктуальность</h3>
-              <p>
+            <li class="features__item item">
+              <img src="./images/clock_1.svg" alt="Часы" class="features__icon" />
+              <h3 class="features__title">Пунктуальность</h3>
+              <p class="features__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
-              <img src="./images/diagram_1.svg" alt="Диаграмма" />
-              <h3 class="title">Планирование</h3>
-              <p>
+            <li class="features__item item">
+              <img src="./images/diagram_1.svg" alt="Диаграмма" class="features__icon" />
+              <h3 class="features__title">Планирование</h3>
+              <p class="features__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item">
-              <img src="./images/astronaut_1.svg" alt="Астронавт" />
-              <h3 class="title">Современные технологии</h3>
-              <p>
+            <li class="features__item item">
+              <img src="./images/astronaut_1.svg" alt="Астронавт" class="features__icon" />
+              <h3 class="features__title">Современные технологии</h3>
+              <p class="features__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -114,41 +107,41 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class="section-occupation">
+      <section>
         <div class="container">
-          <h2 class="occupation-title">Чем мы занимаемся</h2>
-          <ul class="occupation list">
-            <li class="item">
-              <a href="#" class="link">
+          <h2 class="occupation__title">Чем мы занимаемся</h2>
+          <ul class="occupation__list list">
+            <li class="occupation__item item">
+              <a href="#" class="occupation__link link">
                 <img
                   src="./images/desktop_apps.jpg"
                   width="370"
                   height="294"
                   alt="Десктопные приложения"
                 />
-                <h3 class="title">Десктопные приложения</h3>
+                <h3 class="occupation__link--title">Десктопные приложения</h3>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="link">
+            <li class="occupation__item item">
+              <a href="#" class="occupation__link link">
                 <img
                   src="./images/mobile_apps.jpg"
                   width="370"
                   height="294"
                   alt="Мобильные приложения"
                 />
-                <h3 class="title">Мобильные приложения</h3>
+                <h3 class="occupation__link--title">Мобильные приложения</h3>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="link">
+            <li class="occupation__item item">
+              <a href="#" class="occupation__link link">
                 <img
                   src="./images/design_solutions.jpg"
                   width="370"
                   height="294"
                   alt="Дизайнерские решения"
                 />
-                <h3 class="title">Дизайнерские решения</h3>
+                <h3 class="occupation__link--title">Дизайнерские решения</h3>
               </a>
             </li>
           </ul>
@@ -158,55 +151,55 @@
       <!-- Серый фон -->
 
       <!--Наша команда-->
-      <section class="section-team">
+      <section class="section__team">
         <div class="container">
-          <h2 class="team-title">Наша команда</h2>
+          <h2 class="team__title">Наша команда</h2>
 
-          <ul class="team list">
-            <li class="item">
+          <ul class="team__card-set list">
+            <li class="card-set__item item">
               <img
                 src="./images/John_Smith.jpg"
                 width="270"
                 height="260"
                 alt="Джон Смит"
               />
-              <div class="card-content">
-                <h3 class="name"><span lang="en">John Smith</span></h3>
-                <p class="team-text"><span lang="en">Designer</span></p>
+              <div class="card__content">
+                <h3 lang="en" class="card__name">John Smith</h3>
+                <p lang="en" class="card__text">Designer</p>
 
-                <ul class="socials-team list">
-                  <li class="item">
+                <ul class="card__socials list">
+                  <li class="team__social item">
                     <a
                       href="https://www.instagram.com/"
                       aria-label="Ссылка на Instagram"
-                      class="link"
+                      class="team__social-link link"
                       >Instagram
                       <!-- <img src="./images/instagram.svg" alt="instagram" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://twitter.com/"
                       aria-label="Ссылка на Twitter"
-                      class="link"
+                      class="team__social-link link"
                       >Twitter
                       <!-- <img src="./images/twitter.svg" alt="twitter" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://www.facebook.com"
                       aria-label="Ссылка на Facebook"
-                      class="link"
+                      class="team__social-link link"
                       >Facebook
                       <!-- <img src="./images/facebook.svg" alt="facebook" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://www.linkedin.com/"
                       aria-label="Ссылка на LinkedIn"
-                      class="link"
+                      class="team__social-link link"
                       >LinkedIn
                       <!-- <img src="./images/linkedin.svg" alt="linkedin" /> -->
                     </a>
@@ -215,51 +208,49 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card-set__item item">
               <img
                 src="./images/Marta_Stewart.jpg"
                 width="270"
                 height="260"
                 alt="Марта Стюарт"
               />
-              <div class="card-content">
-                <h3 class="name"><span lang="en">Marta Stewart</span></h3>
-                <p class="team-text">
-                  <span lang="en">Frontend Developer</span>
-                </p>
-                <ul class="socials-team list">
-                  <li class="item">
+              <div class="card__content">
+                <h3 lang="en" class="card__name">Marta Stewart</h3>
+                <p lang="en" class="card__text">Frontend Developer</p>
+                <ul class="card__socials list">
+                  <li class="team__social item">
                     <a
                       href="https://www.instagram.com/"
                       aria-label="Ссылка на Instagram"
-                      class="link"
+                      class="team__social-link link"
                       >Instagram
                       <!-- <img src="./images/instagram.svg" alt="instagram" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://twitter.com/"
                       aria-label="Ссылка на Twitter"
-                      class="link"
+                      class="team__social-link link"
                       >Twitter
                       <!-- <img src="./images/twitter.svg" alt="twitter" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://www.facebook.com"
                       aria-label="Ссылка на Facebook"
-                      class="link"
+                      class="team__social-link link"
                       >Facebook
                       <!-- <img src="./images/facebook.svg" alt="facebook" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://www.linkedin.com/"
                       aria-label="Ссылка на LinkedIn"
-                      class="link"
+                      class="team__social-link link"
                       >LinkedIn
                       <!-- <img src="./images/linkedin.svg" alt="linkedin" /> -->
                     </a>
@@ -268,49 +259,50 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card-set__item item">
               <img
                 src="./images/Robert_Jakis.jpg"
                 width="270"
                 height="260"
                 alt="Роберт Джекис"
               />
-              <div class="card-content">
-                <h3 class="name"><span lang="en">Robert Jakis</span></h3>
-                <p class="team-text"><span lang="en">Marketing</span></p>
-                <ul class="socials-team list">
-                  <li class="item">
+              <div class="card__content">
+                <h3 lang="en" class="card__name">Robert Jakis</h3>
+                <p lang="en" class="card__text">Marketing</p>
+
+                <ul class="card__socials list">
+                  <li class="team__social item">
                     <a
                       href="https://www.instagram.com/"
                       aria-label="Ссылка на Instagram"
-                      class="link"
+                      class="team__social-link link"
                       >Instagram
                       <!-- <img src="./images/instagram.svg" alt="instagram" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://twitter.com/"
                       aria-label="Ссылка на Twitter"
-                      class="link"
+                      class="team__social-link link"
                       >Twitter
                       <!-- <img src="./images/twitter.svg" alt="twitter" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://www.facebook.com"
                       aria-label="Ссылка на Facebook"
-                      class="link"
+                      class="team__social-link link"
                       >Facebook
                       <!-- <img src="./images/facebook.svg" alt="facebook" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://www.linkedin.com/"
                       aria-label="Ссылка на LinkedIn"
-                      class="link"
+                      class="team__social-link link"
                       >LinkedIn
                       <!-- <img src="./images/linkedin.svg" alt="linkedin" /> -->
                     </a>
@@ -319,49 +311,49 @@
               </div>
             </li>
 
-            <li class="item">
+            <li class="card-set__item item">
               <img
                 src="./images/Martin_Doe.jpg"
                 width="270"
                 height="260"
                 alt="Мартин Дое"
               />
-              <div class="card-content">
-                <h3 class="name"><span lang="en">Martin Doe</span></h3>
-                <p class="team-text"><span lang="en">UI Designer</span></p>
-                <ul class="socials-team list">
-                  <li class="item">
+              <div class="card__content">
+                <h3 lang="en" class="card__name">Martin Doe</h3>
+                <p lang="en" class="card__text">UI Designer</p>
+                <ul class="card__socials list">
+                  <li class="team__social item">
                     <a
                       href="https://www.instagram.com/"
                       aria-label="Ссылка на Instagram"
-                      class="link"
+                      class="team__social-link link"
                       >Instagram
                       <!-- <img src="./images/instagram.svg" alt="instagram" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://twitter.com/"
                       aria-label="Ссылка на Twitter"
-                      class="link"
+                      class="team__social-link link"
                       >Twitter
                       <!-- <img src="./images/twitter.svg" alt="twitter" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://www.facebook.com"
                       aria-label="Ссылка на Facebook"
-                      class="link"
+                      class="team__social-link link"
                       >Facebook
                       <!-- <img src="./images/facebook.svg" alt="facebook" /> -->
                     </a>
                   </li>
-                  <li class="item">
+                  <li class="team__social item">
                     <a
                       href="https://www.linkedin.com/"
                       aria-label="Ссылка на LinkedIn"
-                      class="link"
+                      class="team__social-link link"
                       >LinkedIn
                       <!-- <img src="./images/linkedin.svg" alt="linkedin" /> -->
                     </a>
@@ -374,42 +366,42 @@
       </section>
 
       <!--Постоянные клиенты-->
-      <section class="section-customers container">
-        <h2 class="customers-title">Постоянные клиенты</h2>
+      <section class="container">
+        <h2 class="customers__title">Постоянные клиенты</h2>
 
-        <ul class="customers-logo list">
-          <li class="item">
-            <a href="#" aria-label="Клиент 1" class="link"
+        <ul class="customers__logo list">
+          <li class="customers__item item">
+            <a href="#" aria-label="Клиент 1" class="customers__link link"
               >Клиент 1
               <!-- <img src="./images/Client_1.svg" alt="Клиент 1" /> -->
             </a>
           </li>
-          <li class="item">
-            <a href="#" aria-label="Клиент 2" class="link"
+          <li class="customers__item item">
+            <a href="#" aria-label="Клиент 2" class="customers__link link"
               >Клиент 2
               <!-- <img src="./images/Client_2.svg" alt="Клиент 2" /> -->
             </a>
           </li>
-          <li class="item">
-            <a href="#" aria-label="Клиент 3" class="link"
+          <li class="customers__item item">
+            <a href="#" aria-label="Клиент 3" class="customers__link link"
               >Клиент 3
               <!-- <img src="./images/Client_3.svg" alt="Клиент 3" /> -->
             </a>
           </li>
-          <li class="item">
-            <a href="#" aria-label="Клиент 4" class="link"
+          <li class="customers__item item">
+            <a href="#" aria-label="Клиент 4" class="customers__link link"
               >Клиент 4
               <!-- <img src="./images/Client_4.svg" alt="Клиент 4" /> -->
             </a>
           </li>
-          <li class="item">
-            <a href="#" aria-label="Клиент 5" class="link"
+          <li class="customers__item item">
+            <a href="#" aria-label="Клиент 5" class="customers__link link"
               >Клиент 5
               <!-- <img src="./images/Client_5.svg" alt="Клиент 5" /> -->
             </a>
           </li>
-          <li class="item">
-            <a href="#" aria-label="Клиент 6" class="link"
+          <li class="customers__item item">
+            <a href="#" aria-label="Клиент 6" class="customers__link link"
               >Клиент 6
               <!-- <img src="./images/Client_6.svg" alt="Клиент 6" /> -->
             </a>
@@ -420,58 +412,58 @@
 
     <!--Футер-->
     <footer class="page-footer">
-      <div class="container">
-        <div class="address-container">
+      <div class="container page-footer__container">
+        <div class="page-footer__address">
           <address class="address">
-            <a href="./index.html" class="logo inverse link"
-              ><span lang="en" class="logo-web">Web</span
-              ><span lang="en"> Studio</span></a
+            <a href="./index.html" class="logo page-footer__logo link"
+              ><span lang="en">Web</span
+              ><span lang="en" class="page-logo--reverse"> Studio</span></a
             >
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@example.com" class="footer-contacts link"
+            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@example.com" class="page-footer-contacts link"
               >info@example.com</a
             >
-            <a href="tel:+380991111111" class="footer-contacts link"
+            <a href="tel:+380991111111" class="page-footer-contacts link"
               >+38 099 111 11 11</a
             >
           </address>
         </div>
 
-        <div class="call-to-action-socials">
-          <b class="call-to-action">присоединяйтесь</b>
-          <ul class="socials list">
-            <li class="item">
+        <div class="page-footer__appeal">
+          <b class="appeal">присоединяйтесь</b>
+          <ul class="socials__list list">
+            <li class="socials__item item">
               <a
                 href="https://www.instagram.com/"
                 aria-label="Ссылка на Instagram"
-                class="link"
+                class="socials__link link"
                 >Instagram
                 <!-- <img src="./images/instagram_white.svg" alt="Instagram" /> -->
               </a>
             </li>
-            <li class="item">
+            <li class="socials__item item">
               <a
                 href="https://twitter.com/"
                 aria-label="Ссылка на Twitter"
-                class="link"
+                class="socials__link link"
                 >Twitter
                 <!-- <img src="./images/twitter_white.svg" alt="Twitter" /> -->
               </a>
             </li>
-            <li class="item">
+            <li class="socials__item item">
               <a
                 href="https://www.facebook.com"
                 aria-label="Ссылка на Facebook"
-                class="link"
+                class="socials__link link"
                 >Facebook
                 <!-- <img src="./images/facebook_white.svg" alt="Facebook" /> -->
               </a>
             </li>
-            <li class="item">
+            <li class="socials__item item">
               <a
                 href="https://www.linkedin.com/"
                 aria-label="Ссылка на LinkedIn"
-                class="link"
+                class="socials__link link"
                 >LinkedIn
                 <!-- <img src="./images/linkedin_white.svg" alt="LinkedIn" /> -->
               </a>
@@ -479,10 +471,12 @@
           </ul>
         </div>
 
-        <div class="call-to-action-apeal">
-          <b class="call-to-action">подписаться на рассылку</b>
+        <div class="page-footer__appeal">
+          <b class="appeal">подписаться на рассылку</b>
 
-          <a href="#" class="footer-button">Подписаться</a>
+          <a href="#" class="page-footer__button"
+            >Подписаться <span class="button__icon">Иконка</span></a
+          >
         </div>
         <p lang="en" class="copy container">
           2020 | Developed by GoIT Students

@@ -15,32 +15,34 @@
     
     <!--Шапка сайта-->
     <header class="page-header">
-      <div class="container main-nav">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo link"><span class="logo-web">Web</span><span lang="en"> Studio</span></a>
+      <div class="container page-header__container">
+        <nav class="page-header__nav">
+          <a href="./index.html" class="logo link"><span lang="en">Web<span lang="en"  class="page-logo"> Studio</span></a>
     
-          <ul class="header-site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link">Студия</a>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="link site-nav__link">Студия</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link  current">Портфолио</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="link site-nav__link site-nav__link--current">Портфолио</a>
             </li>
-            <li class="item">
-              <a href="./contacts.html" class="link">Контакты</a>
+            <li class="site-nav__item">
+              <a href="./contacts.html" class="link site-nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" aria-label="Электронная почта" class="link">
+        <ul class="list contact-info__list">
+          <li class="contact-info__item">
+            <a href="mailto:info@devstudio.com" aria-label="Электронная почта" class="link page-header__contacts">
+              <span class="site-nav__icon">Иконка</span>
               <!-- <img src="./images/envelope(hover).svg" alt="Электронная почта" /> -->
-              info@devstudio.com</a>
+               info@devstudio.com</a>
           </li>
           <li class="item">
-            <a href="tel:+380961111111" aria-label="Телефон" class="link">
+            <a href="tel:+380961111111" aria-label="Телефон" class="link page-header__contacts">
+              <span class="site-nav__icon">Иконка</span>
               <!-- <img src="./images/smartphone.svg" alt="Телефон" /> -->
-              +38 096 111 11 11</a>
+               +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -49,117 +51,117 @@
     <!-- Белый фон -->
     <main class="page-content">
       <!-- Фильтр -->
-      <section class="main-section">
+      <section>
         <div class="container">
         <h1 class="visually-hidden">Группы проектов</h1>
-        <ul class="filter list">
-          <li class="item"><button type="button" class="filter-button">Все</button></li>
-          <li class="item"><button type="button" class="filter-button">Веб-сайты</button></li>
-          <li class="item"><button type="button" class="filter-button">Приложения</button></li>
-          <li class="item"><button type="button" class="filter-button">Дизайн</button></li>
-          <li class="item"><button type="button" class="filter-button">Маркетинг</button></li>
+        <ul class="filter__list list">
+          <li class="filter__item item"><button type="button" class="filter__button">Все</button></li>
+          <li class="filter__item item"><button type="button" class="filter__button">Веб-сайты</button></li>
+          <li class="filter__item item"><button type="button" class="filter__button">Приложения</button></li>
+          <li class="filter__item item"><button type="button" class="filter__button">Дизайн</button></li>
+          <li class="filter__item item"><button type="button" class="filter__button">Маркетинг</button></li>
         </ul>
      
 
       <!-- Все проекты -->
-        <ul class="project list">
-          <li class="item">
-            <a href="#" class="link">
+        <ul class="project__list list">
+          <li class="project__item item">
+            <a href="#" class="project__link link">
             <img src="./images/project_1.jpg" width="370" height="294" alt="Проект 1">
-            <div class="card-content">
-              <p class="project-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            <div class="project__content">
+              <p class="project__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                 шпионажа и атак на защищённые сервера конкурентов.</p>
-              <h2 class="project-title">Технокряк</h2>
-              <p class="project-class">Веб-сайт</p>
+              <h2 class="project__title">Технокряк</h2>
+              <p class="project__filter">Веб-сайт</p>
             </div>
             </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class="project__item item">
+            <a href="#" class="project__link link">
             <img src="./images/project_2.jpg" width="370" height="294" alt="Проект 2">
             
-            <div class="card-content">
-              <p class="project-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            <div class="project__content">
+              <p class="project__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
               шпионажа и атак на защищённые сервера конкурентов.</p>
-            <h2 class="project-title">Постер <span lang="en">Orlean vs Golden Star</span></h2>
-            <p class="project-class">Дизайн</p>
+            <h2 class="project__title">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+            <p class="project__filter">Дизайн</p>
             </div>
           </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class="project__item item">
+            <a href="#" class="project__link link">
             <img src="./images/project_3.jpg" width="370" height="294" alt="Проект 3">
-            <div class="card-content">
-            <p class="project-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            <div class="project__content">
+            <p class="project__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
               шпионажа и атак на защищённые сервера конкурентов.</p>
-            <h2 class="project-title">Ресторан <span lang="en">Seafood</span></h2>
-            <p class="project-class">Приложение</p>
+            <h2 class="project__title">Ресторан <span lang="en">Seafood</span></h2>
+            <p class="project__filter">Приложение</p>
             </div>
             </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class="project__item item">
+            <a href="#" class="project__link link">
             <img src="./images/project_4.jpg" width="370" height="294" alt="Проект 4">
-            <div class="card-content">
-            <p class="project-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            <div class="project__content">
+            <p class="project__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
             шпионажа и атак на защищённые сервера конкурентов.</p>
-            <h2 class="project-title">Проект <span lang="en">Prime</span></h2>
-            <p class="project-class">Маркетинг</p>
+            <h2 class="project__title">Проект <span lang="en">Prime</span></h2>
+            <p class="project__filter">Маркетинг</p>
             </div>
             </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class="project__item item">
+            <a href="#" class="project__link link">
             <img src="./images/project_5.jpg" width="370" height="294" alt="Проект 5">
-            <div class="card-content">
-            <p class="project-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            <div class="project__content">
+            <p class="project__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
             шпионажа и атак на защищённые сервера конкурентов.</p>
-            <h2 class="project-title">Проект <span lang="en">Boxes</span></h2>
-            <p class="project-class">Приложение</p>
+            <h2 class="project__title">Проект <span lang="en">Boxes</span></h2>
+            <p class="project__filter">Приложение</p>
             </div>
             </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class="project__item item">
+            <a href="#" class="project__link link">
             <img src="./images/project_6.jpg" width="370" height="294" alt="Проект 6">
-            <div class="card-content">
-            <p  class="project-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            <div class="project__content">
+            <p  class="project__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
             шпионажа и атак на защищённые сервера конкурентов.</p>
-            <h2 class="project-title"><span lang="en">Inspiration has no Borders</span></h2>
-            <p class="project-class">Веб-сайт</p>
+            <h2 class="project__title"><span lang="en">Inspiration has no Borders</span></h2>
+            <p class="project__filter">Веб-сайт</p>
             </div>
             </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class="project__item item">
+            <a href="#" class="project__link link">
             <img src="./images/project_7.jpg" width="370" height="294" alt="Проект 7">
-            <div class="card-content">
-            <p class="project-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            <div class="project__content">
+            <p class="project__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
             шпионажа и атак на защищённые сервера конкурентов.</p>
-            <h2 class="project-title">Издание <span lang="en">Limited Edition</span></h2>
-            <p class="project-class">Дизайн</p>
+            <h2 class="project__title">Издание <span lang="en">Limited Edition</span></h2>
+            <p class="project__filter">Дизайн</p>
             </div>
             </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class="project__item item">
+            <a href="#" class="project__link link">
             <img src="./images/project_8.jpg" width="370" height="294" alt="Проект 8">
-            <div class="card-content">
-            <p class="project-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            <div class="project__content">
+            <p class="project__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
             шпионажа и атак на защищённые сервера конкурентов.</p>
-            <h2 class="project-title">Проект <span lang="en">LAB</span></h2>
-            <p class="project-class">Маркетинг</p>
+            <h2 class="project__title">Проект <span lang="en">LAB</span></h2>
+            <p class="project__filter">Маркетинг</p>
             </div>
             </a>
           </li>
-          <li class="item">
-            <a href="#" class="link">
+          <li class="project__item item">
+            <a href="#" class="project__link link">
             <img src="./images/project_9.jpg" width="370" height="294" alt="Проект 9">
-            <div class="card-content">
-            <p class="project-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            <div class="project__content">
+            <p class="project__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
             шпионажа и атак на защищённые сервера конкурентов.</p>
-            <h2 class="project-title"><span lang="en">Growing Business</span></h2>
-            <p class="project-class">Приложение</p>
+            <h2 class="project__title"><span lang="en">Growing Business</span></h2>
+            <p class="project__filter">Приложение</p>
             </div>
             </a>
           </li>
@@ -171,48 +173,48 @@
 
     <!--Футер-->
     <footer class="page-footer">
-      <div class="container">
-        <div class="address-container">
+      <div class="container page-footer__container">
+        <div class="page-footer__address">
           <address class="address">
-            <a href="./index.html" class="logo inverse link"><span class="logo-web">Web</span><span lang="en"> Studio</span></a>
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@example.com" class="footer-contacts link">info@example.com</a>
-            <a href="tel:+380991111111" class="footer-contacts link">+38 099 111 11 11</a>
+            <a href="./index.html" class="logo page-footer__logo link"><span lang="en">Web</span><span lang="en" class="page-logo--reverse"> Studio</span></a>
+            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@example.com" class="page-footer-contacts link">info@example.com</a>
+            <a href="tel:+380991111111" class="page-footer-contacts link">+38 099 111 11 11</a>
           </address>
         </div>
     
-        <div class="call-to-action-socials">
-          <b class="call-to-action">присоединяйтесь</b>
-          <ul class="socials list">
-            <li class="item">
-              <a href="https://www.instagram.com/" aria-label="Ссылка на Instagram" class="link">Instagram
+        <div class="page-footer__appeal">
+          <b class="appeal">присоединяйтесь</b>
+          <ul class="socials__list list">
+            <li class="socials__item item">
+              <a href="https://www.instagram.com/" aria-label="Ссылка на Instagram" class="socials__link link">Instagram
                 <!-- <img src="./images/instagram_white.svg" alt="Instagram" /> -->
               </a>
             </li>
-            <li class="item">
-              <a href="https://twitter.com/" aria-label="Ссылка на Twitter" class="link">Twitter
+            <li class="socials__item item">
+              <a href="https://twitter.com/" aria-label="Ссылка на Twitter" class="socials__link link">Twitter
                 <!-- <img src="./images/twitter_white.svg" alt="Twitter" /> -->
               </a>
             </li>
-            <li class="item">
-              <a href="https://www.facebook.com" aria-label="Ссылка на Facebook" class="link">Facebook
+            <li class="socials__item item">
+              <a href="https://www.facebook.com" aria-label="Ссылка на Facebook" class="socials__link link">Facebook
                 <!-- <img src="./images/facebook_white.svg" alt="Facebook" /> -->
               </a>
             </li>
-            <li class="item">
-              <a href="https://www.linkedin.com/" aria-label="Ссылка на LinkedIn" class="link">LinkedIn
+            <li class="socials__item item">
+              <a href="https://www.linkedin.com/" aria-label="Ссылка на LinkedIn" class="socials__link link">LinkedIn
                 <!-- <img src="./images/linkedin_white.svg" alt="LinkedIn" /> -->
               </a>
             </li>
           </ul>
         </div>
     
-        <div class="call-to-action-apeal">
-          <b class="call-to-action">подписаться на рассылку</b>
+        <div class="page-footer__appeal">
+          <b class="appeal">подписаться на рассылку</b>
     
-          <a href="#" class="footer-button">Подписаться</a>
+          <a href="#" class="page-footer__button">Подписаться <span class="button__icon">Иконка</span></a>
         </div>
-        <p class="copy container">2020 | Developed by GoIT Students</p>
+        <p lang="en" class="copy container">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
   </body>
