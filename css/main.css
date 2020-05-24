@@ -1,14 +1,29 @@
 /* Hero */
 .hero {
-  display: block;
-
-  margin: 0 auto;
-  background-image: url('../images/hero.jpg'), url('../images/hero_overlay.jpg');
-  background-repeat: repeat-x no-repeat;
-  background-position: center;
-  background-size: 1600px 600px;
-  background-size: cover;
+  position: relative;
 }
+
+.hero img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 .hero-content {
   display: block;
   text-align: center;
